@@ -1,24 +1,13 @@
-"""
-from ggame import App, Color, LineStyle, Sprite
-from ggame import CircleAsset
-red = Color(0xff0000, 1.0)
-green= Color(0x00ff00, 1.0)
-blue = Color(0x0000ff, 1.0)
-black = Color(0x000000, 1.0)
+from ggame import App, RectangleAsset, ImageAsset, SoundAsset
+from ggame import LineStyle, Color, Sprite, Sound
 
-thinline = LineStyle(1, black)
-mycircle = CircleAsset(5, thinline, blue)
-other= CircleAsset (5,thinline,red)
-xcoordinates = range(100, 600, 10)
-
-# Generate a list of sprites that form a line!
-sprite2 = [Sprite(mycircle, (x, x*0.5 + 100)) for x in xcoordinates]
-sprite1=[Sprite(other, (x,(-0.5)*x+200)) for x in xcoordinates]
+# define colors and line style
+green = Color(0x00ff00, 1)
+black = Color(0, 1)
+noline = LineStyle(0, black)
+# a rectangle asset and sprite to use as background
+bg_asset = RectangleAsset(myapp.width, myapp.height, noline, green)
+bg = Sprite(bg_asset, (0,0))
 
 myapp = App()
 myapp.run()
-"""
-b = -4
-while b <= 0:
-    b += 1
-    print(b)
