@@ -1,3 +1,4 @@
+"""
 from ggame import App, Color, LineStyle, Sprite
 from ggame import CircleAsset
 red = Color(0xff0000, 1.0)
@@ -16,3 +17,8 @@ sprite1=[Sprite(other, (x,(-0.5)*x+200)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
+"""
+b = -4
+while b <= 0:
+    b += 1
+    print(b)
